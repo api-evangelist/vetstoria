@@ -1,0 +1,45 @@
+aid: vetstoria
+url: https://raw.githubusercontent.com/api-evangelist/vetstoria/refs/heads/main/apis.yml
+name: Vetstoria
+kind: company
+description: Vetstoria provides real-time online appointment booking, veterinary
+  websites, and online payments for veterinary practices, integrating in real time
+  with 40+ practice management systems (PIMS) - including ezyVet, IDEXX Neo, IDEXX
+  Cornerstone, IDEXX Animana, Covetrus Ascend, AVImark, RxWorks, visionVPM, Provet
+  Cloud, OpenVPMS, and others - to sync availability, prevent double-bookings, and
+  match clients and pets back into the PIMS. Founded in 2015 and used by more than
+  5,000 practices worldwide (operating as PetDesk Direct Booking in the United
+  States), Vetstoria does NOT publish a public, self-service developer API. Its
+  integration surface is partner-gated - software vendors connect through a
+  contact-based Integrations Partner program, and each PIMS integration is typically
+  driven from the PIMS side (for example, ezyVet exposes Vetstoria as an "API
+  Partner" and IDEXX Neo auto-generates an API key when the Vetstoria connection is
+  enabled). No public API reference, developer portal, OpenAPI definition, or
+  documented WebSocket exists as of this cataloging.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Veterinary
+- Online Booking
+- Appointment Scheduling
+- Practice Management
+- PIMS Integration
+- Healthcare
+- Payments
+- Partner API
+created: '2026-07-03'
+modified: '2026-07-03'
+specificationVersion: '0.19'
+common:
+- type: LinkedIn
+  url: https://www.linkedin.com/company/vetstoria
+- type: Website
+  url: https://www.vetstoria.com
+- type: Documentation
+  url: https://www.vetstoria.com/integrations/
+- type: Partners
+  url: https://www.vetstoria.com/partners/
+- type: Plans
+  url: https://www.vetstoria.com/pricing/
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

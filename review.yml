@@ -1,0 +1,84 @@
+aid: vetstoria
+name: Vetstoria
+review:
+  question: Does Vetstoria expose a documented public WebSocket API?
+  answer: false
+  date: '2026-07-03'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was authored. Vetstoria publishes no public API of any
+    kind - REST or otherwise - so there is no server-push transport (WebSocket or
+    SSE) on a Vetstoria-owned API to model. Vetstoria's real-time behavior is
+    achieved by integrating into each practice management system (PIMS) through
+    partner-gated, PIMS-side connections; those systems carry their own protocols
+    and are out of scope for a Vetstoria AsyncAPI document.
+findings:
+  summary: |
+    Vetstoria does not publish a documented public WebSocket API - and, more
+    broadly, does not publish any public, self-service developer API. Vetstoria
+    is a real-time online appointment booking, veterinary website, and online
+    payments platform for veterinary practices. It integrates with 40+ practice
+    management systems to sync availability, prevent double-bookings, and match
+    clients and pets back into the PIMS. Integration is partner-gated: software
+    vendors join a contact-based Integrations Partner program, and each PIMS
+    connection is typically driven from the PIMS side (ezyVet exposes Vetstoria
+    as an "API Partner"; IDEXX Neo auto-generates an API key when the Vetstoria
+    connection is enabled). No public developer portal, API reference, OpenAPI
+    definition, webhook documentation, or WebSocket (ws:// or wss://) endpoint is
+    published anywhere on vetstoria.com as of the review date.
+  publicApi: |
+    No public API. There is no api.vetstoria.com or developer.vetstoria.com
+    documentation site, no self-service API reference, and no published
+    authentication scheme. The Integrations Partner program is contact-based
+    (form submission and follow-up), and integration credentials (such as the
+    IDEXX Neo API key) are provisioned per-connection from within the partner
+    PIMS rather than from a Vetstoria developer console.
+  transports:
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket endpoint is documented anywhere by Vetstoria as of the review date.
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No public REST API reference is published. Vetstoria consumes partner PIMS APIs; it does not document a public REST surface of its own.
+  endpointsModeled: true
+  endpointsModeledNote: |
+    Vetstoria publishes no endpoints, so none are asserted as real. A partner
+    integration logically would need to cover availability/schedule sync,
+    appointment booking, appointment types, and client/pet matching, but no
+    endpoint paths, methods, or schemas are documented publicly and none are
+    invented here.
+sources:
+  - url: https://www.vetstoria.com/
+    type: Website
+    note: Product overview - online booking, websites, payments for veterinary practices. No API mentioned.
+  - url: https://www.vetstoria.com/integrations/
+    type: Documentation
+    note: Lists 40+ PIMS and third-party integrations. No developer API docs or endpoints.
+  - url: https://www.vetstoria.com/partners/
+    type: Documentation
+    note: Services and Integrations Partner programs. Contact-based (form); no self-service developer resources.
+  - url: https://www.vetstoria.com/pricing/
+    type: Plans
+    note: Fixed monthly per-practice subscription tiered by clinician count.
+  - url: https://docs.ezyvet.com/en/see-all-integrations/appointments-and-telemedicine/vetstoria/configure-the-vetstoria-integration
+    type: Documentation
+    note: ezyVet configures Vetstoria as an "API Partner"; integration is driven from the PIMS side.
+  - url: https://idexxneosupport.zendesk.com/hc/en-us/articles/360049770474-FAQs-Vetstoria-integration-with-Neo
+    type: Documentation
+    note: IDEXX Neo auto-creates an API key when the Vetstoria connection is enabled under Administration > Integrations.
+  - url: https://www.linkedin.com/company/vetstoria
+    type: LinkedIn
+    note: Company profile - founded 2015, 5,000+ practices, integrates with 30+ PIMS.
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    No WebSocket surface exists, and Vetstoria publishes no public API to model.
+    The apis.yml entry was authored as an honest company stub (no apis array),
+    documenting the partner-gated, PIMS-side integration model and the published
+    subscription pricing. No AsyncAPI document was created because there is no
+    Vetstoria-owned server-push transport; any real-time behavior lives inside
+    the partner PIMS.
