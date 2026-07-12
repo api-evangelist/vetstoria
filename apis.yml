@@ -30,6 +30,8 @@ created: '2026-07-03'
 modified: '2026-07-03'
 specificationVersion: '0.19'
 common:
+- type: DomainSecurity
+  url: security/vetstoria-domain-security.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/vetstoria
 - type: Website
@@ -40,6 +42,8 @@ common:
   url: https://www.vetstoria.com/partners/
 - type: Plans
   url: https://www.vetstoria.com/pricing/
+- type: Blog
+  url: https://www.vetstoria.com/blog/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
