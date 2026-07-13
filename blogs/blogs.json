@@ -1,0 +1,21 @@
+{
+  "repo": "vetstoria",
+  "feeds": [
+    {
+      "source": "https://www.vetstoria.com/blog/",
+      "feed_url": "https://www.vetstoria.com/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
+      "source": "https://www.vetstoria.com/pricing/",
+      "feed_url": "https://www.vetstoria.com/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    }
+  ],
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 6
+}
