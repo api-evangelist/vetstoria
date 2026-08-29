@@ -1,5 +1,8 @@
 aid: vetstoria
 url: https://raw.githubusercontent.com/api-evangelist/vetstoria/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "No public API reference, developer portal, OpenAPI definition, or documented WebSocket exists as of this cataloging."
 name: Vetstoria
 kind: company
 description: Vetstoria provides real-time online appointment booking, veterinary
