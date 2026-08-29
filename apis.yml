@@ -16,6 +16,17 @@ description: Vetstoria provides real-time online appointment booking, veterinary
   Partner" and IDEXX Neo auto-generates an API key when the Vetstoria connection is
   enabled). No public API reference, developer portal, OpenAPI definition, or
   documented WebSocket exists as of this cataloging.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: approval
