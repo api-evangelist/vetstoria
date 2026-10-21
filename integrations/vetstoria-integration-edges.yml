@@ -1,0 +1,51 @@
+edges:
+- partner_name: ezyVet integrations
+  partner: ezyvet
+  partner_match: mirror
+  mirror_match: register-name
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.ezyvet.com/integrations/vetstoria
+  mirror_of: ezyvet/integrations/ezyvet-integration-edges.yml
+  apps:
+  - Vetstoria
+  detected: '2026-10-20'
+  detected_by: sweep-veterinary-pet.py
+  identity_source: register-name
+  identity_note: register-name 'vetstoria' = vetstoria; no wikidata P856
+- partner_name: Provet Cloud integrations
+  partner: provet-cloud
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.provet.com/integrations
+  mirror_of: provet-cloud/integrations/provet-cloud-integration-edges.yml
+  apps:
+  - Vetstoria
+  detected: '2026-10-20'
+  detected_by: sweep-veterinary-pet.py
+generated: '2026-10-20'
+method: searched
+source:
+- https://www.ezyvet.com/integrations
+- https://www.provet.com/integrations
+- https://digitail.com/integrations/
+- https://www.shepherd.vet/integrations/
+- https://instinct.vet/integrations/
+- https://covetrus.com/covetrus-platform/workflow-and-productivity-tools/avimark/
+- https://covetrus.com/covetrus-platform/industry-partners/
+checked:
+- https://covetrus.com/covetrus-platform/industry-partners/
+- https://covetrus.com/covetrus-platform/workflow-and-productivity-tools/avimark/
+- https://digitail.com/integrations/
+- https://instinct.vet/integrations/
+- https://www.ezyvet.com/integrations
+- https://www.provet.com/integrations
+- https://www.shepherd.vet/integrations/
